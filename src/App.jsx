@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Love from "../public/Cat-Heart.gif";
+import Hug from "../public/Bot-Cat.gif";
 
 function App() {
   const [yesSize, setYesSize] = useState(90);
@@ -69,7 +71,7 @@ function App() {
               {noText}
             </button>
           </div>
-          <img className="mt-4 w-96 h-auto" src="/Cat-Heart.gif" alt="Danace" />
+          <img className="mt-4 w-96 h-auto" src={Love} alt="Danace" />
         </>
       )}
       {yes && (
@@ -78,7 +80,7 @@ function App() {
             <h1 className="text-red-500 text-4xl font-bold text-center mb-6 max-w-xl">
               Knew you would say Yes!!!!!!!!!
             </h1>
-            <img className="mt-4 w-100 h-auto" src="/Bot-Cat.gif" alt="Happy" />
+            <img className="mt-4 w-100 h-auto" src={Hug} alt="Happy" />
           </div>
           <button
             className="fixed bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded shadow-lg hover:bg-red-400 transition"
